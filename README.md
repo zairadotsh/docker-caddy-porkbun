@@ -1,5 +1,4 @@
-[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/viv32/docker-caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/viv32/docker-caddy-porkbun) 
-<!-- [![Docker](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/docker-publish.yml) [![Check for Updates](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/check-update.yml/badge.svg)](https://github.com/erri120/docker-caddy-porkbun/actions/workflows/check-update.yml) -->
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/viv32/docker-caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/viv32/docker-caddy-porkbun) [![Docker](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml) 
 
 # viv32/docker-caddy-porkbun
 
@@ -9,10 +8,10 @@ Forked from [erri120/docker-caddy-porkbun](https://github.com/erri120/docker-cad
 
 ## Usage
 
-The image is availabe on [Docker Hub](https://hub.docker.com/r/erri120/docker-caddy-porkbun). You can use the `latest` tag or a specific Caddy version:
+The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/docker-caddy-porkbun). You can use the `latest` tag or a specific Caddy version:
 
 - `viv32/docker-caddy-porkbun:latest` (latest from Docker Hub)
-- `viv32/docker-caddy-porkbun:2.6.2` (Caddy `2.6.2` from Docker Hub)
+- `viv32/docker-caddy-porkbun:2.7.6` (Caddy `2.7.6` from Docker Hub)
 
 The following platforms are supported:
 
