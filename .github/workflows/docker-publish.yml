@@ -1,4 +1,4 @@
-name: Docker
+name: Container Build
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
   buildx:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
       # This is used to complete the identity challenge
       # with sigstore/fulcio when running outside of PRs.
