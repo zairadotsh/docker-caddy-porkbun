@@ -9,9 +9,6 @@ RUN xcaddy build \
 # Container
 FROM caddy:${CADDY_VERSION}-alpine
 
-# install additional packages
-RUN apk add --no-cache tzdata curl
-
 LABEL org.opencontainers.image.vendor="viv32"
 LABEL org.opencontainers.image.documentation="https://github.com/viv32/docker-caddy-porkbun"
 LABEL org.opencontainers.image.source="https://github.com/viv32/docker-caddy-porkbun"
