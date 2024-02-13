@@ -54,8 +54,25 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             docker.io/${{ env.BASE_NAME }}:latest
-            docker.io/${{ env.BASE_NAME }}:${{ steps.get-version.outputs.LATEST_MAJOR_VERSION }}
             docker.io/${{ env.BASE_NAME }}:${{ steps.get-version.outputs.LATEST_MINOR_VERSION }}
+            docker.io/${{ env.BASE_NAME }}:${{ steps.get-version.outputs.LATEST_PATCH_VERSION }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64,linux/arm64,linux/arm/v7
+      
+      - name: Create Release
+        uses: ncipollo/release-action@v1.14.0
+        with:
+          tag: ${{ steps.get-version.outputs.LATEST_PATCH_VERSION }}
+          commmit: master
+          draft: true
+          body: |
+            Update to Caddy version **${{ steps.get-version.outputs.LATEST_PATCH_VERSION }}**
+
+            The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/docker-caddy-porkbun).
+
+            Pull this image with `docker pull ${{ env.BASE_NAME }}:${{steps.get-version.outputs.LATEST_PATCH_VERSION }}`
+
+
+
+            
