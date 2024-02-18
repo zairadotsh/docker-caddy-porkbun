@@ -65,11 +65,10 @@ jobs:
         with:
           tag: ${{ steps.get-version.outputs.LATEST_PATCH_VERSION }}
           commit: master
-          draft: true
           body: |
             Update to Caddy version **${{ steps.get-version.outputs.LATEST_PATCH_VERSION }}**
 
-            The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/docker-caddy-porkbun).
+            The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/caddy-porkbun).
 
             Pull this image with `docker pull ${{ env.BASE_NAME }}:${{steps.get-version.outputs.LATEST_PATCH_VERSION }}`
 
