@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  BASE_NAME: viv32/docker-caddy-porkbun
+  BASE_NAME: viv32/caddy-porkbun
 
 jobs:
   buildx:

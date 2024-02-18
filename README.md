@@ -1,6 +1,6 @@
 [![Docker Image Version (latest semver)](https://img.shields.io/docker/v/viv32/docker-caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/viv32/docker-caddy-porkbun) [![Container Builds](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml) 
 
-# viv32/docker-caddy-porkbun
+# viv32/caddy-porkbun
 
 This is a custom [Caddy](https://hub.docker.com/_/caddy)-based image that adds the following features with the [porkbun](https://github.com/caddy-dns/porkbun) module added.
 
@@ -10,9 +10,9 @@ Forked from [erri120/docker-caddy-porkbun](https://github.com/erri120/docker-cad
 
 The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/docker-caddy-porkbun). You can use the `latest` tag or a minor or patch version of Caddy:
 
-- `viv32/docker-caddy-porkbun:latest`
-- `viv32/docker-caddy-porkbun:2.7`
-- `viv32/docker-caddy-porkbun:2.7.6`
+- `viv32/caddy-porkbun:latest`
+- `viv32/caddy-porkbun:2.7`
+- `viv32/caddy-porkbun:2.7.6`
 
 The following platforms are supported:
 
