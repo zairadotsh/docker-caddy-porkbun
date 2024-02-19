@@ -1,4 +1,4 @@
-[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/viv32/docker-caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/viv32/docker-caddy-porkbun) [![Container Builds](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml) 
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/viv32/caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/viv32/caddy-porkbun) [![Container Builds](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/viv32/docker-caddy-porkbun/actions/workflows/docker-publish.yml) 
 
 # viv32/caddy-porkbun
 
