@@ -1,4 +1,4 @@
-ARG CADDY_VERSION=2.7.6
+ARG CADDY_VERSION=2.8
 
 # Builder
 FROM caddy:${CADDY_VERSION}-builder-alpine AS builder
