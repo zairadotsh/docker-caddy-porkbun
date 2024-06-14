@@ -8,7 +8,7 @@ Forked from [erri120/docker-caddy-porkbun](https://github.com/erri120/docker-cad
 
 ## Usage
 
-The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/docker-caddy-porkbun). You can use the `latest` tag or a minor or patch version of Caddy:
+The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/caddy-porkbun). You can use the `latest` tag or a minor or patch version of Caddy:
 
 - `viv32/caddy-porkbun:latest`
 - `viv32/caddy-porkbun:2.7`
