@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  BASE_NAME: viv32/caddy-porkbun
+  BASE_NAME: zairadotsh/caddy-porkbun
 
 jobs:
   buildx:
@@ -68,7 +68,7 @@ jobs:
           body: |
             Update to Caddy version **${{ steps.get-version.outputs.LATEST_PATCH_VERSION }}**
 
-            The image is availabe on [Docker Hub](https://hub.docker.com/r/viv32/caddy-porkbun).
+            The image is availabe on [Docker Hub](https://hub.docker.com/r/zairadotsh/caddy-porkbun).
 
             Pull this image with `docker pull ${{ env.BASE_NAME }}:${{steps.get-version.outputs.LATEST_PATCH_VERSION }}`
 
