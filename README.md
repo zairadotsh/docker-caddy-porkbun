@@ -1,6 +1,6 @@
 [![Docker Image Version (latest semver)](https://img.shields.io/docker/v/zairadotsh/caddy-porkbun?label=Docker%20Hub)](https://hub.docker.com/r/zairadotsh/caddy-porkbun) [![Container Builds](https://github.com/zairadotsh/docker-caddy-porkbun/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/zairadotsh/docker-caddy-porkbun/actions/workflows/docker-publish.yml) 
 
-# viv32/caddy-porkbun
+# zairadotsh/caddy-porkbun
 
 This is a custom [Caddy](https://hub.docker.com/_/caddy)-based image that adds the following features with the [porkbun](https://github.com/caddy-dns/porkbun) module added.
 
