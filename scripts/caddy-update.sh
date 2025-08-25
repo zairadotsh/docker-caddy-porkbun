@@ -7,16 +7,15 @@
 # 4) extract the first line, which is the latest version (https://manpage.me/?q=head)
 getLatestVersion() {
     local result=$(
-        curl -s "https://hub.docker.com/v2/repositories/$1/tags?page_size=50" | \
-        jq -r '.results[] | select(.name | match("^\\d(\\.\\d(\\.\\d)?)?$")) | .name' | \
-        sort -V -r | \
-        head -n 1
+        curl -sL "https://api.github.com/repos/$1/releases/latest" \
+        | jq -r ".tag_name" \
+        | sed "s/^v//"
     )
 
     echo "${result}"
 }
 
-LATEST_CADDY_VERSION=$(getLatestVersion "library/caddy")
+LATEST_CADDY_VERSION=$(getLatestVersion "caddyserver/caddy")
 LATEST_CUSTOM_VERSION=$(
     cat Dockerfile | \
     head -n 1 | \
